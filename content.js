@@ -39,8 +39,6 @@ const loadSwitcheroo = (button) => {
         child.style.top = "auto";
       }
     );
-
-    switcherooButton.remove();
   });
 
   button.parentElement.prepend(switcherooButton);
