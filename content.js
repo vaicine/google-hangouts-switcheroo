@@ -44,8 +44,8 @@ const loadSwitcheroo = (button) => {
   button.parentElement.prepend(switcherooButton);
 };
 
-const observer = new MutationObserver( (_, me) => {
-  const button = document.querySelector("[aria-label='Meeting details']");
+const observer = new MutationObserver((_, me) => {
+  const button = document.querySelector("button[aria-label='Meeting details']");
 
   if (button) {
     loadSwitcheroo(button);
